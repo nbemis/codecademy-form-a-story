@@ -17,19 +17,19 @@
       <!--Add your form below:-->
       <form action="story.html" method="GET">
         <label for="animal-1">Animal:</label>
-        <input id="animal-1" type="text" name="animal-1" placeholder="Ex: Lion" required><br>
+        <input id="animal-1" type="text" name="animal-1" placeholder="Ex: Lion" required pattern="[A-Za-z]+"><br>
 
         <label for="animal-2">Another Animal:</label>
-          <input id="animal-2" name="animal-2" type="text" placeholder="Ex: Zebra" required><br>
+          <input id="animal-2" name="animal-2" type="text" placeholder="Ex: Zebra" pattern="[A-Za-z]+" required><br>
 
           <label for="animal-3">One More Animal:</label>
-          <input id="animal-3" name="animal-3" type="text" placeholder="Ex: Bear" required><br>
+          <input id="animal-3" name="animal-3" type="text" placeholder="Ex: Bear" pattern="[A-Za-z]+" required><br>
 
           <label for="adj-1">Adjective (past tense):</label>
-          <input id="adj-1" name="adj-1" type="text" placeholder="Ex: Amused" required><br>
+          <input id="adj-1" name="adj-1" type="text" placeholder="Ex: Amused" pattern="[A-Za-z]+" required><br>
 
           <label for="verb-1">Verb (ends in -ing):</label>
-          <input id="verb-1" name="verb-1" type="text" placeholder="Ex: Running" required><br>
+          <input id="verb-1" name="verb-1" type="text" placeholder="Ex: Running" pattern="[A-Za-z]+" required><br>
 
           <label for="num-1">Number:</label>
           <input id="num-1" name="num-1" type="number" placeholder="1-10" required><br>
@@ -48,14 +48,14 @@
           </select><br>
 
           <label for="quote">Motivational Quote:</label>
-          <input type="text" id="quote" name="quote" size="40" placeholder="i.e. Whatever you are, be a good one." required list="quote-choices">
+          <input type="text" id="quote" name="quote" size="40" placeholder="i.e. Whatever you are, be a good one." minlength="5" required list="quote-choices">
           <datalist id="quote-choices">
             <option value="winner gets free ice cream!"></option>
             <option value="loser gets to walk home"></option>
           </datalist><br>
 
           <label for="message">Meaningful Message:</label><br>
-          <textarea name="message" id="message" placeholder="To be yourself in a world that is constantly trying to make you something else is the greatest accomplishment" cols="40" rows="8"></textarea><br>
+          <textarea name="message" id="message" placeholder="'To be yourself in a world that is constantly trying to make you something else is the greatest accomplishment'" minlength="5" maxlength="250" cols="40" rows="8"></textarea><br>
 
 
 
