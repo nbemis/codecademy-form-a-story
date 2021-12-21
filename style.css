@@ -11,6 +11,10 @@ h2 {
   font-size: 20px;
 }
 
+p{
+  margin: 16px 10px;
+}
+
 input[type="text"], input[type="number"] {
   min-height: 15px;
   border-radius: 5px;
@@ -24,7 +28,7 @@ input[type="radio"] {
 #main {
   background-color: rgba(255,255,255,0.8);
   text-align: center;
-  height: 80vh;
+  height: 100vh;
   border-radius: 15px;
   margin: 2% 10%;
   overflow: auto;
